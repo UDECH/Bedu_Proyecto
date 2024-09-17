@@ -1,0 +1,29 @@
+.card {
+  border-radius: 15px;
+  background-color: transparent;
+  border: 1px solid ;
+  color: white;
+  width: 22rem;
+  margin-top: 10rem;
+}
+
+.btn-block {
+  width: 100%;
+  border-radius: 50px;
+  color: white;
+}
+
+.card-title {
+  font-weight: bold;
+  color: white;
+}
+
+.card-body {
+  padding: 1.5rem;
+  color: white;
+}
+
+.btn-outline-primary {
+  border-width: 2px;
+
+}

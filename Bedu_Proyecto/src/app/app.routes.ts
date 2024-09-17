@@ -20,16 +20,17 @@ export const routes: Routes = [
             { path: 'login', component: LoginComponent },
         ]
     },
-    { path: '', redirectTo: '/main/home', pathMatch: 'full' },
-
+    
     {
-        path: 'client', component: HeaderClientComponent,
-        canActivate: [AuthGuard],
-        children: [
-            { path: 'home-client', component: HomeClientComponent },
-            { path: 'service-client', component: ServiceClientComponent },
-            { path: 'profile-client', component: ProfileClientComponent },
-        ]
+      path: 'client', component: HeaderClientComponent,
+      canActivate: [AuthGuard],
+      children: [
+        { path: 'home-client', component: HomeClientComponent },
+        { path: 'service-client', component: ServiceClientComponent },
+        { path: 'profile-client', component: ProfileClientComponent },
+      ]
     },
+    { path: '', redirectTo: 'main/home', pathMatch: 'full' },
+    { path: '**', redirectTo: 'main/home', pathMatch: 'full' },
 
 ];
