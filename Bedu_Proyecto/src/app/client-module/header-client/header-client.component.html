@@ -12,16 +12,14 @@
         </div>
         
         <div class="d-flex justify-content-end align-items-center gap-2 me-4 mt-3">
-                <a [routerLink]="['']" routerLinkActive="active" class="text-light fs-5">Home</a>
-                <a [routerLink]="['login']" routerLinkActive="active" class="text-light fs-5">Login</a>
-                <a [routerLink]="['services']" routerLinkActive="active" class="text-light fs-5">Servicio</a>
-                <a [routerLink]="['contact']" routerLinkActive="active" class="text-light fs-5">Contacto</a>
+                <a [routerLink]="['home-client']" routerLinkActive="active" class="text-light fs-5">Home</a>
+                <a [routerLink]="['service-client']" routerLinkActive="active" class="text-light fs-5">Servicios</a>
+                <a [routerLink]="['profile-client']" routerLinkActive="active" class="text-light fs-5">Perfil</a>
         </div>
     
     </div>
 
     <router-outlet></router-outlet>
     
-    <app-footer></app-footer>
 </body>
 </html>

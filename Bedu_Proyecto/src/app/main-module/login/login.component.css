@@ -13,7 +13,3 @@ body {
 .content {
     flex: 1;
 }
-
-img {
-    box-shadow: -8px -5px 14px 2px black;
-}
